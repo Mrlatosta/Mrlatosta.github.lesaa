@@ -112,9 +112,18 @@
 
       }
 
+      #fe{
+      	font-size: 0.7rem;
+      }
+
       #logorec{
 
       	max-width: 50px;
+
+      }
+       #logofot{
+
+      	width: 100%;
 
       }
 
