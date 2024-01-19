@@ -1,0 +1,125 @@
+  
+
+    #imagen{
+
+
+        height: 700px;
+        vertical-align: middle;
+        background-image: url(imagenes/fondodegradado.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 100%;
+        background-color: transparent;
+        background-size: cover;
+
+
+
+      	}
+
+
+		 #nabmovil{
+        align-items: center;
+        text-decoration: none;
+      }
+
+       #nabmovil .nav-link{
+        color: black;
+       
+        text-decoration: none;
+      }
+
+      #nabmovil .nav-link:hover{
+        background: #F7F2F2;
+        color: #DDD1D1;
+        transition: background;
+        transition-duration: 300ms;
+        }
+
+		 #asd{
+
+        transition-property: all;
+        transition-duration: 0.3s;
+      }
+
+      #naba1{
+
+        transition-property: all;
+        transition-duration: 0.3s;
+      }
+
+      #naba2{
+
+        transition-property: all;
+        transition-duration: 0.3s;
+      }
+
+      #naba3{
+
+        transition-property: all;
+        transition-duration: 0.3s;
+      }
+      #naba4{
+
+        transition-property: all;
+        transition-duration: 0.3s;
+      }
+
+      #uni{
+      	   transition-property: all;
+        transition-duration: 0.3s;
+      }
+
+		#nab a{
+
+			color: #003B5D;
+			font-weight: 500;
+		}
+
+
+      #contenedor{
+      	background-color: transparent;
+      	position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  
+      }
+
+
+
+
+    @media only screen and (max-width: 992px) {
+
+       	 #imagen{
+        height: 900px;
+        vertical-align: middle;
+        background-image: url(imagenes/fondodegradado.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 100%;
+        background-color: transparent;
+        background-size: cover;
+
+
+
+      }
+
+      #contenedor{
+      	background-color: transparent;
+      	position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+
+      }
+
+      
+  
+
+  }
