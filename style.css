@@ -112,16 +112,16 @@ border: 0px solid #000000;
 box-shadow: -1px 4px 18px 6px rgba(0,0,0,0.36);
 
 
-border-radius: 49px 49px 49px 49px;
--moz-border-radius: 49px 49px 49px 49px;
--webkit-border-radius: 49px 49px 49px 49px;
+border-radius: 20px 20px 20px 20px;
+-moz-border-radius: 20px 20px 20px 20px;
+-webkit-border-radius: 20px 20px 20px 20px;
 border: 0px solid #000000;
 
      }
 
      #fotoclip2{
 
-
+      max-width: 360px;
    top: 170px;
     left: -100px;
     position: absolute;
