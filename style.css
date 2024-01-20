@@ -1,4 +1,50 @@
-  
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 22));
+  }
+}
+
+.slider {
+  background: #ffff;
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 22);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
 
     #imagen{
 
@@ -155,7 +201,7 @@ border: 0px solid #000000;
         vertical-align: middle;
         background-image: url(imagenes/fondodegradado.png);
         background-repeat: no-repeat;
-        background-position: 50% 50%;
+        background-position: 60% 50%;
         background-size: 100%;
         background-color: transparent;
         background-size: cover;
@@ -174,7 +220,7 @@ border: 0px solid #000000;
 
       #logorec{
 
-      	max-width: 50px;
+      	max-width: 60px;
 
       }
        #logofot{
