@@ -16,6 +16,56 @@
 
       	}
 
+      	#contenedorDos{
+      	margin-top: 150px;
+      }
+
+      	#fotoclipa{
+
+
+      		width: 50%;
+
+      		-webkit-box-shadow: -1px 4px 34px 0px rgba(0,0,0,0.84);
+-moz-box-shadow: -1px 4px 34px 0px rgba(0,0,0,0.84);
+box-shadow: -1px 4px 18px 6px rgba(0,0,0,0.36);
+
+
+border-radius: 49px 49px 49px 49px;
+-moz-border-radius: 49px 49px 49px 49px;
+-webkit-border-radius: 49px 49px 49px 49px;
+border: 0px solid #000000;
+      	}
+
+      	#fotoclip,
+     #fotoclip2
+     {
+
+ 
+     width: 1000px;
+
+-webkit-box-shadow: -1px 4px 34px 0px rgba(0,0,0,0.84);
+-moz-box-shadow: -1px 4px 34px 0px rgba(0,0,0,0.84);
+box-shadow: -1px 4px 18px 6px rgba(0,0,0,0.36);
+
+
+border-radius: 49px 49px 49px 49px;
+-moz-border-radius: 49px 49px 49px 49px;
+-webkit-border-radius: 49px 49px 49px 49px;
+border: 0px solid #000000;
+
+     }
+
+     #fotoclip2{
+
+
+   top: 170px;
+    left: -100px;
+    position: absolute;
+    
+    z-index: 1; /* La imagen inferior estará detrás de la superior */
+     }
+
+
 
 		 #nabmovil{
         align-items: center;
@@ -112,6 +162,10 @@
 
       }
 
+      #contenedorDos{
+      	margin-top: 50px;
+      }
+
       #fe{
       	font-size: 0.9rem;
       }
@@ -138,6 +192,22 @@
   padding: 20px;
 
       }
+
+
+      #fotoclip2,
+      #fotoclip
+      {
+
+
+   top: 0px;
+    left: 0px;
+    position: relative;
+    max-width: 100%;
+
+    margin-bottom: 50px;
+    
+  /* La imagen inferior estará detrás de la superior */
+     }
 
 
    
