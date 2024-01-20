@@ -23,7 +23,7 @@
       	#fotoclipa{
 
 
-      		width: 50%;
+      		width: 450px;
 
       		-webkit-box-shadow: -1px 4px 34px 0px rgba(0,0,0,0.84);
 -moz-box-shadow: -1px 4px 34px 0px rgba(0,0,0,0.84);
@@ -142,6 +142,8 @@ border: 0px solid #000000;
       	font-size: 1rem; 
       	color: #153770
       }
+
+      
 
 
 
