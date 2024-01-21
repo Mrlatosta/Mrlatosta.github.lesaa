@@ -85,16 +85,34 @@ path {
         background-size: 100%;
         background-color: transparent;
         background-size: cover;
-          background-image:url(imagenes/fondodegradado2.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),url(imagenes/1.jpeg);
             background-attachment: fixed;
 
 
 
 
       	}
+      
+      #imagenSobrenosotros{
+
+
+        height: 400px;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 100%;
+        background-color: transparent;
+        background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),url(imagenes/1.jpeg);
+            background-attachment: fixed;
+
+
+
+
+        }
 
       	#contenedorDos{
-      	margin-top: 150px;
+      	margin-top: 100px;
       }
 
       	#fotoclipa{
@@ -215,9 +233,22 @@ border: 0px solid #000000;
   
       }
 
+      #contenedorSobrenosotros{
+        background-color: transparent;
+        position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  
+      }
+
       #ctro{
-      	font-size: 1rem; 
-      	color: #153770
+      	font-size: 0.9rem; 
+      	color: #072353;
+        padding-top: 9px;
       }
 
       
@@ -230,7 +261,19 @@ border: 0px solid #000000;
        	 #imagen{
         height: 900px;
         vertical-align: middle;
-        background-image: url(imagenes/fondodegradado.png);
+        background-repeat: no-repeat;
+        background-position: 60% 50%;
+        background-size: 100%;
+        background-color: transparent;
+        background-size: cover;
+
+
+
+      }
+
+       #imagenSobrenosotros{
+        height: 900px;
+        vertical-align: middle;
         background-repeat: no-repeat;
         background-position: 60% 50%;
         background-size: 100%;

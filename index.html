@@ -65,11 +65,11 @@
 
       <div class="navbar-nav me-md-5 p-md-3  text-center" id="nab" style=" font-size: 1rem; ">
 
-        <a class="nav-link active me-md-4 mt-2" id="naba1"  aria-current="page" href="#imagen" style="">Inicio</a>
-        <a class="nav-link active me-md-4 " id="naba2"  aria-current="page" href="#ofe">¿Quienes Somos?</a>
-        <a class="nav-link active me-md-4 mt-2" id="naba3"  aria-current="page" href="#sob">Servicios</a>
-        <a class="nav-link active me-md-4 mt-2" id="naba3"  aria-current="page" href="#sob">Beneficios</a>
-        <a class="nav-link active me-md-4 mt-2" id="naba4"  aria-current="page" href="#cont">Contacto</a>
+        <a class="nav-link active me-md-4 mt-2" id="naba1"  aria-current="page" href="index.html" style=""><strong>Inicio </strong></a>
+        <a class="nav-link active me-md-4 " id="naba2"  aria-current="page" href="sobrenosotros.html"><strong>¿Quienes Somos? </strong></a>
+        <a class="nav-link active me-md-4 mt-2" id="naba3"  aria-current="page" href="#sob"> <strong>Servicios </strong></a>
+        <a class="nav-link active me-md-4 mt-2" id="naba3"  aria-current="page" href="#sob"> <strong>Beneficios </strong></a>
+        <a class="nav-link active me-md-4 mt-2" id="naba4"  aria-current="page" href="#cont"> <strong>Contacto </strong></a>
 
       </div>
 
@@ -126,8 +126,11 @@
 	
 
 	
-	<h1 id="dos"  class="mt-0 me-0 me-md-5 text-white" style="font-size: 2.5rem;"> <strong>¡Grupo Lesaa tiene una solución para ti! </strong> </h1> 
+	<h1 id="dos"  class="mt-0 me-0  text-white" style="font-size: 2.5rem;"> <strong>¡Grupo Lesaa tiene una solución para ti! </strong> </h1> 
 	<h3 class="text-white mt-3">Bienvenido a nuestro sitio</h3>
+
+
+	<a href="#sob"><i class="fa-solid fa-circle-arrow-down fa-3x mt-5 fa-bounce" style="color: #ffffff;"></i></a>
 
 	
 
@@ -146,11 +149,11 @@
 </div>
 
 <section id="sob"  class="mt-5 pb-5" style="background-color: white;">
-	
+
 <div class="container text-center pt-3">
 	
 
-<div class="row mt-4 mb-5">
+<div class="row  mt-4 mb-0">
 	
 
 	<div id="uno" class="col-12 col-md-6   text-center">
@@ -209,15 +212,25 @@ Somos una empresa Mexicana, comprometida en ofrecer un servicio de Control de Ca
 
 </div>
 
-<div class="row" id="contenedorDos">
 
-	<div id="ray" class="col-12 col-md-6 text-center">
+
+
+
+</div>
+
+<div class="container-fluid text-center" style="background-color: whitesmoke;">
+
+	<div class="container"> 
+	
+	<div class="row" id="contenedorDos">
+
+	<div id="ray" class="col-12 col-md-6 text-center mt-5 mb-3">
 
 
 		
 
 
-			<div class="container mb-3 shadow rounded pt-2">
+			<div class="container mb-3 shadow rounded pt-2" style="background-color: white;">
 
 			<p class="mt-4" style="color:  #447CA3;">
 				Buscando satisfacer las cambiantes necesidades de nuestros clientes, mejorar el servicio que ofrecemos y con la intención de incursionar en nuevos sectores, en 2019 Grupo Lesaa termino una inversión en instalaciones, equipo y personal que nos permite casi duplicar nuestra capacidad instalada.
@@ -248,7 +261,7 @@ Somos una empresa Mexicana, comprometida en ofrecer un servicio de Control de Ca
 
 <div class="container ">
         <div class="row ">
-            <div class="col-12 col-md-12 ">
+            <div class="col-12 col-md-12  mt-5 mb-3">
                 <img id="fotoclipa" src="imagenes/imagenejemplo.jpg" class="img-fluid  " alt="">
             </div>
 
@@ -265,6 +278,9 @@ Somos una empresa Mexicana, comprometida en ofrecer un servicio de Control de Ca
 
 
 </div>
+
+</div>
+
 
 
 </div>
@@ -504,7 +520,7 @@ Somos una empresa Mexicana, comprometida en ofrecer un servicio de Control de Ca
 
 <!-- footer -->
 
-<section id="cont"  class="mb-0 mt-5 pt-3 pb-3" style="background-color: #C5E1E7;">
+<section id="cont"  class="mb-0 mt-0 pt-3 pb-3" style="background-color: #C5E1E7;">
 
 	<div class="container text-center text-white ">
 		
@@ -638,7 +654,8 @@ window.onscroll = function (event) {
       //asd.style.height = 50px;
 
       if(y>=90){
-      	ctro.style.marginBottom = '20px'
+      	ctro.style.marginBottom = '20px';
+      	ctro.style.paddingTop = 0;
         asd.style.height= '70px';
         asd.style.backgroundColor= 'rgba(250, 250, 237, 0.9)';
         asd.style.opacity = '';
@@ -653,6 +670,7 @@ window.onscroll = function (event) {
          //asd.classList.remove("bg-none")
          //asd.classList.add("bg-dark");
        }else{
+       	ctro.style.paddingTop = '9px';
         asd.style.height= '100px';
        asd.style.backgroundColor= ' rgba(250, 250, 250)';
        asd.style.opacity = '3';
