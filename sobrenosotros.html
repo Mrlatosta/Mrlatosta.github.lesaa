@@ -15,7 +15,7 @@
 <body>
 
 
-<nav id="asd" class="navbar navbar-expand-lg navbar-light fixed-top shadow p-1 rounded"  style="background-color: rgba(255, 255, 255);"> <!--sticky-top o fixed-top -->
+<nav id="neubar" class="navbar navbar-expand-lg navbar-light fixed-top shadow rounded"  style="background-color: rgba(255, 255, 255);"> <!--sticky-top o fixed-top -->
   
   <div class="container-fluid" >
 
@@ -43,9 +43,9 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    	<div class="mt-4 d-none d-xl-block">
+    	<div class="mt-3 d-none d-xl-block">
 
-    		<h2 id="ctro"> <strong> Centro Integral en Servicios de Laboratorio de Aguas y Alimentos S. A de C.V
+    		<h2 id="ctro"> <strong> Centro Integral en <br> Servicios de Laboratorio de Agua y Alimentos S. A de C.V
 			</h2> </strong> </div>
 
     	</div>
@@ -59,21 +59,28 @@
    
     
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-
-    	
-
-      <div class="navbar-nav me-md-5 p-md-3  text-center" id="nab" style=" font-size: 1rem; ">
-
-        <a class="nav-link active me-md-4 mt-2" id="naba1"  aria-current="page" href="index.html" style=""><strong>Inicio </strong></a>
-        <a class="nav-link active me-md-4 " id="naba2"  aria-current="page" href="sobrenosotros.html"><strong>¿Quienes Somos? </strong></a>
-        <a class="nav-link active me-md-4 mt-2" id="naba3"  aria-current="page" href="#sob"> <strong>Servicios </strong></a>
-        <a class="nav-link active me-md-4 mt-2" id="naba3"  aria-current="page" href="#sob"> <strong>Beneficios </strong></a>
-        <a class="nav-link active me-md-4 mt-2" id="naba4"  aria-current="page" href="#cont"> <strong>Contacto </strong></a>
-
-      </div>
-
-    </div>
+     <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item" >
+              <a class="nav-link active mx-3 "  aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item" id="activo" style="margin-right: 0px;">
+              <a style="width: 160px; padding-right: 0px;" class="nav-link active mx-2 text-white" href="sobrenosotros.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a style="font" class="nav-link active mx-3" href="#">Servicios</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link active mx-2" href="#">Beneficios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active mx-2" href="#">
+                Contacto
+              </a>
+             
+            </li>
+          </ul>
+        </div>
   </div>
 </nav>
 
@@ -255,73 +262,7 @@ Benito Juárez, Q. Roo Mexico</p>
 
 
   
-<script type="text/javascript">
 
-
-  const asd = document.getElementById('asd');
-   const logo = document.getElementById('logorec');
-   const naba1 = document.getElementById('naba1');
-    const naba2 = document.getElementById('naba2');
- const naba3 = document.getElementById('naba3');
-  const naba4 = document.getElementById('naba4');
-    const ctro = document.getElementById('ctro');
-
- // $(window).scroll(function() {        
-  //   asd.onclick = function() {
-   // this.style.height = '50px';
- // };
-
-//});
-  
-
-window.onscroll = function (event) {
-      // Then here (inside the anonymous function that's being passed in), we add the class
-      // "my-class" to the document body.
-      var y = window.scrollY;
-      console.log(y);
-
-      //asd.style.height = 50px;
-
-      if(y>=90){
-      	ctro.style.marginBottom = '20px';
-      	ctro.style.paddingTop = 0;
-        asd.style.height= '70px';
-        asd.style.backgroundColor= 'rgba(250, 250, 237, 0.9)';
-        asd.style.opacity = '';
-        logo.style.width= '100px';
-        naba1.style.color='#003B5D';
-         naba2.style.color='#003B5D';
-          naba3.style.color='#003B5D';
-           naba4.style.color='#003B5D';
-           logo.style.marginBottom = '3px';
-           logo.src = 'imagenes/logorectangulartrans.png'
-        //'rgba(16,41,69,0.9)'
-         //asd.classList.remove("bg-none")
-         //asd.classList.add("bg-dark");
-       }else{
-       	ctro.style.paddingTop = '9px';
-        asd.style.height= '100px';
-       asd.style.backgroundColor= ' rgba(250, 250, 250)';
-       asd.style.opacity = '3';
-       logo.style.width= '150px';
-        naba1.style.color='#003B5D';
-         naba2.style.color='#003B5D';
-          naba3.style.color='#003B5D';
-           naba4.style.color='#003B5D';
-           logo.src = 'imagenes/logorectangulartrans.png'
-        //asd.classList.add("bg-none");
-        //asd.classList.remove("bg-dark");
-       }
-     
-
-      //document.body.classList.add("my-class");
-
-    }
-
-
-    
-
-</script>
 
  <script src="index.js"></script>
 

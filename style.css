@@ -103,7 +103,7 @@ path {
         background-size: 100%;
         background-color: transparent;
         background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),url(imagenes/1.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),url(imagenes/laboratorio.png);
             background-attachment: fixed;
 
 
@@ -169,7 +169,6 @@ border: 0px solid #000000;
 
        #nabmovil .nav-link{
         color: black;
-       
         text-decoration: none;
       }
 
@@ -203,10 +202,10 @@ border: 0px solid #000000;
         transition-property: all;
         transition-duration: 0.3s;
       }
-      #naba4{
+      .nav-item{
 
         transition-property: all;
-        transition-duration: 0.3s;
+        transition-duration: 0.4s;
       }
 
       #logorec{
@@ -214,11 +213,63 @@ border: 0px solid #000000;
         transition-duration: 0.3s;
       }
 
-		#nab a{
+		
 
-			color: #003B5D;
-			font-weight: 500;
-		}
+      #neubar {
+      background-color: rgba(255, 255, 255); 
+      background-image: url(imagenes/fondoprueba.png); 
+      background-size: 550px; 
+      background-position:800px; 
+      background-repeat: no-repeat;
+      box-shadow: 4px 6px 12px rgba(0,0,0,0.4)
+    }
+
+
+    
+    #activo{
+      color: white;
+      border-radius: 10px;
+      background: linear-gradient(145deg, #2243AF, #2243AF);
+      box-shadow:  4px 4px 8px #92908D,
+                   -4px -4px 8px #92908D;
+
+      
+    }
+
+
+   
+
+
+    #neubar .nav-item {
+
+      margin : auto 6px;
+    }
+
+    #neubar .nav-link {
+      color: #002668;
+      font-weight: 700;
+     padding-left: 20px;
+     padding-right: 20px;
+     line-height: 30px;
+
+    }
+
+    .nav-item{
+
+            background: linear-gradient(175deg, #fff, #fff);
+
+    }
+
+    .nav-item:hover {
+     border-radius: 6px;
+      background: linear-gradient(145deg, #fff, #fff);
+      box-shadow:  10px 10px 20px #92908D,
+                   -10px -10px 20px #92908D;
+
+
+      
+    }
+    
 
 
       #contenedor{
@@ -246,13 +297,116 @@ border: 0px solid #000000;
       }
 
       #ctro{
-      	font-size: 0.9rem; 
+      	font-size: 0.8rem; 
       	color: #072353;
-        padding-top: 9px;
+        padding-top: 12px;
+        margin-left: 60px;
+        line-height: 1;
       }
 
-      
 
+.carousel-wrapper {
+  width: 480px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+  border-radius: 20px;
+  margin: 100px auto 20px;
+}
+
+.carousel-container {
+  width: 400px;
+  height: 250px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.carousel {
+  display: flex;
+  width: 1200px;
+  animation: sliding 12s infinite;
+}
+.carousel div {
+  width: 400px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+.carousel:hover {
+  animation-play-state: paused;
+}
+.carousel .image-one {
+  background-image: url("imagenes/laboratorio.png");
+}
+.carousel .image-two {
+  background-image: url("https://images.unsplash.com/photo-1475053081036-c8eb31d187b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+}
+.carousel .image-three {
+  background-image: url("https://images.unsplash.com/photo-1525278070609-779c7adb7b71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+}
+
+@keyframes sliding {
+  30% {
+    transform: translateX(0);
+  }
+  35% {
+    transform: translateX(-400px);
+  }
+  65% {
+    transform: translateX(-400px);
+  }
+  70% {
+    transform: translateX(-800px);
+  }
+  98% {
+    transform: translateX(-800px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width: 768px) {
+  .carousel-wrapper {
+    width: 312px;
+    height: 210px;
+  }
+
+  .carousel-container {
+    width: 240px;
+    height: 150px;
+  }
+
+  .carousel {
+    width: 720px;
+  }
+  .carousel > div {
+    width: 240px;
+    height: 150px;
+  }
+
+  @keyframes sliding {
+    30% {
+      transform: translateX(0);
+    }
+    35% {
+      transform: translateX(-240px);
+    }
+    65% {
+      transform: translateX(-240px);
+    }
+    70% {
+      transform: translateX(-480px);
+    }
+    98% {
+      transform: translateX(-480px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
 
 
 
