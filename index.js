@@ -11,7 +11,7 @@
 		});
 
 
-		sr.reveal('#ray', {
+		sr.reveal('#', {
 				duration: 1000,
 				origin: 'left',
 				distance: '-50px'
