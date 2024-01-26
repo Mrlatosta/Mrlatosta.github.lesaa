@@ -313,8 +313,19 @@ border: 0px solid #000000;
         line-height: 1;
       }
 
+  .card p{
+    font-weight: 500;
+    color: black;
+  }
+  .card .card-title{
+    font-weight: 900;
+    font-size: 1.6rem;
+    color: #072353;
+    font-family: monospace;
+  }
 
-.carousel-wrapper {
+
+.carousela-wrapper {
   width: 480px;
   height: 300px;
   display: flex;
@@ -326,65 +337,77 @@ border: 0px solid #000000;
 
 }
 
-.carousel-container {
+.carousela-container {
   width: 400px;
   height: 250px;
   overflow: hidden;
   margin: 0 auto;
 }
 
-.carousel {
+.carousela {
   display: flex;
   width: 1200px;
   animation: sliding 12s infinite;
 }
-.carousel div {
+.carousela div {
   width: 400px;
   height: 250px;
   background-size: cover;
   background-position: center;
 }
-.carousel:hover {
+.carousela:hover {
   animation-play-state: paused;
 }
-.carousel .image-one {
+.carousela .image-one {
   background-image: url("imagenes/laboratorio.png");
 }
-.carousel .image-two {
+.carousela .image-two {
   background-image: url("imagenes/H1.png");
 }
 
-.carousel .image-three {
+.carousela .image-three {
   background-image: url("https://images.unsplash.com/photo-1525278070609-779c7adb7b71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
 }
 
-.carousel .h-one {
+.carousela .h-one {
   background-image: url("imagenes/H1.png");
 }
-.carousel .h-two {
+.carousela .h-two {
     background-image: url("imagenes/H2.png");
 
 }
 
-.carousel .h-three {
+.carousela .h-three {
     background-image: url("imagenes/H3.png");
 
 }
 
-.carousel .cap-one {
+.carousela .cap-one {
     background-image: url("imagenes/C1.png");
 
 }
 
-.carousel .cap-two {
+.carousela .cap-two {
     background-image: url("imagenes/C2.png");
 
 }
 
-.carousel .cap-three {
+.carousela .cap-three {
     background-image: url("imagenes/C3.png");
 
 }
+
+.carousela .lesaa-one {
+    background-image: url("imagenes/lesaa.png");
+
+}
+
+.carousela .lesaa-two {
+    background-image: url("imagenes/lesaados.png");
+
+}
+
+
 
 
 
@@ -409,20 +432,20 @@ border: 0px solid #000000;
   }
 }
 @media screen and (max-width: 768px) {
-  .carousel-wrapper {
+  .carousela-wrapper {
     width: 312px;
     height: 210px;
   }
 
-  .carousel-container {
+  .carousela-container {
     width: 240px;
     height: 150px;
   }
 
-  .carousel {
+  .carousela {
     width: 720px;
   }
-  .carousel > div {
+  .carousela > div {
     width: 240px;
     height: 150px;
   }
