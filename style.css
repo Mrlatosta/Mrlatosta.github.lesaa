@@ -177,6 +177,7 @@ border: 0px solid #000000;
         color: #DDD1D1;
         transition: background;
         transition-duration: 300ms;
+
         }
 
 		 #asd{
@@ -252,6 +253,7 @@ border: 0px solid #000000;
      padding-right: 20px;
      line-height: 30px;
 
+
     }
 
     .nav-item{
@@ -267,8 +269,8 @@ border: 0px solid #000000;
                    -10px -10px 20px #92908D;
 
       font-size: 1.1rem;
-
-      
+      border: solid 2px;
+      border-color: #2243AF;
     }
     
 
@@ -471,6 +473,8 @@ border: 0px solid #000000;
     }
   }
 }
+
+
 
 
 
