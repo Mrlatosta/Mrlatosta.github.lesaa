@@ -78,14 +78,14 @@ path {
     #imagen{
 
 
-        height: 700px;
+        height: 100vh;
         vertical-align: middle;
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-size: 100%;
         background-color: transparent;
         background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),url(imagenes/fondo1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),url(imagenes/fondo4.jpeg);
             background-attachment: fixed;
 
 
@@ -110,6 +110,23 @@ path {
 
         }
 
+#imagenServicios{
+
+
+        height: 400px;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        background-position: 50% 40%;
+        background-size: 100%;
+        background-color: transparent;
+        background-size: cover;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),url(imagenes/M2.png);
+            background-attachment: fixed;
+
+
+
+
+        }
       	#contenedorDos{
       	font-weight: 700;
       }
@@ -217,7 +234,7 @@ border: 0px solid #000000;
 
       #neubar {
       background-color: rgba(255, 255, 255); 
-      background-image: url(imagenes/fondoprueba.png); 
+      background-image: url(imagenes/.png); 
       background-size: 550px; 
       background-position:800px; 
       background-repeat: no-repeat;
