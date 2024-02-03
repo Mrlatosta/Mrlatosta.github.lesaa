@@ -77,6 +77,27 @@
 	.card .card-title{
 		font-size: 1.4rem;
 	}
+	.card-footer{
+		text-align: center;
+	}
+
+	.custom-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .custom-card-header {
+            background-color: #007bff;
+            color: #fff;
+            border-bottom: none;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .custom-card-body {
+            background-color: #ffffff;
+        }
 
 </style>
 
@@ -227,9 +248,10 @@
 
 
 	
-<div class="container  pb-3">
+<div class="container  pb-3" id="sob">
 	
 	<h1 style="color: #072353; font-weight: 700;">Servicio de Laboratorio </h1>
+	<hr class=" mb-5" style="border-top: 2px solid #072353; background: transparent; opacity: 100%; width: 50%;">
 
 <p style="text-align: justify; font-size: 1.2rem; font-weight: 600;" class="mt-3">Los análisis del agua y alimentos son esenciales para la producción eficiente de productos seguros y de calidad. Para satisfacer sus necesidades, hemos desarrollado una amplia gama de servicios analíticos en aguas y alimentos que incluyen ensayos microbiológicos y fisicoquímicos.
 
@@ -240,10 +262,10 @@
 
 
 
-<div class="container">
+<div class="container-fluid px-5">
     <div class="row pt-5 m-auto">
 
-      <div class="col-md-6 col-lg-3 pb-3">
+      <div class="col-md-6 col-lg-3 pb-3" id="primero">
 
         <!-- Copy the content below until next comment -->
         <div class="card card-custom bg-white border-white border-0">
@@ -274,14 +296,14 @@
 
           </div>
           <div class="card-footer" style="background: inherit; border-color: inherit;">
-            <a href="#" class="btn btn-danger">Cotizar</a>
+            <a href="contacto.html" class="btn btn-danger px-5">Cotizar</a>
             
           </div>
         </div>
 
       </div>
 
-      <div class="col-md-6 col-lg-3 pb-3">
+      <div class="col-md-6 col-lg-3 pb-3" id="segundo">
 
         <!-- Copy the content below until next comment -->
         <div class="card card-custom bg-white border-white border-0">
@@ -294,17 +316,15 @@
           
           <div class="card-body" style="overflow-y: auto">
             <h4 class="card-title">Hielo</h4>
-            <h4 class="mt-3" style="font-size: 1rem; color: gray;">NOM-127-1994.</h4>
+            <h4 class="mt-3" style="font-size: 1rem; color: gray;">NOM-201-2002.</h4>
 
             <div id="collapseHieloCard" class="collapse">
-            <p class="card-text">Salud ambiental, agua para uso y consumo humano-límites permisibles de calidad y tratamientos a que debe someterse el agua para su potabilización...</p>
+            <p class="card-text">Productos y servicios. Agua y hielo para consumo humano, envasados y a granel. Especificaciones sanitarias...</p>
 
             <ul> 
 				<li>Coliformes Totales</li>
 				<li>Coliformes Fecales</li>
-				<li>Cloro Libre</li>
 				<li>Potencial de Hidrogeno</li>
-				<li>Solidos Disueltos Totales</li> 
 
 
 
@@ -312,14 +332,14 @@
 						</div>
           </div>
           <div class="card-footer" style="background: inherit; border-color: inherit;">
-            <a href="#" class="btn btn-danger">Cotizar</a>
+            <a href="contacto.html" class="btn btn-danger px-5">Cotizar</a>
             
           </div>
         </div>
 
       </div>
 
-      <div class="col-md-6 col-lg-3 pb-3">
+      <div class="col-md-6 col-lg-3 pb-3" id="tercero">
 
         <!-- Copy the content below until next comment -->
         <div class="card card-custom bg-white border-white border-0">
@@ -332,30 +352,32 @@
           
           <div class="card-body" style="overflow-y: auto">
             <h4 class="card-title">Albercas</h4>
-            <h4 class="mt-3" style="font-size: 1rem; color: gray;">NOM-127-1994.</h4>
+            <h4 class="mt-3" style="font-size: 1rem; color: gray;">NOM-245-2010.</h4>
             <div id="collapseAlbercaCard" class="collapse">
-            <p class="card-text">Salud ambiental, agua para uso y consumo humano-límites permisibles de calidad y tratamientos a que debe someterse el agua para su potabilización...</p>
+            <p class="card-text">Requisitos sanitarios y calidad del agua que deben cumplir las albercas.</p>
 
             <ul> 
 				<li>Coliformes Totales</li>
-				<li>Coliformes Fecales</li>
+				<li>Ameba en Vida Libre</li>
 				<li>Cloro Libre</li>
 				<li>Potencial de Hidrogeno</li>
-				<li>Solidos Disueltos Totales</li> 
+				<li>Cloraminas</li>
+				<li>Acido Cianurico</li>
+				<li>Turbiedad</li> 
 
 
 
 			</ul> </div>
           </div>
           <div class="card-footer" style="background: inherit; border-color: inherit;">
-            <a href="#" class="btn btn-danger">Cotizar</a>
+            <a href="contacto.html" class="btn btn-danger px-5">Cotizar</a>
             
           </div>
         </div>
 
       </div>
 
-      <div class="col-md-6 col-lg-3 pb-3">
+      <div class="col-md-6 col-lg-3 pb-3" id="cuarto">
 
         <!-- Copy the content below until next comment -->
         <div class="card card-custom bg-white border-white border-0">
@@ -368,24 +390,27 @@
           
           <div class="card-body" style="overflow-y: auto">
             <h4 class="card-title">Alimentos</h4>
-            <h4 class="mt-3" style="font-size: 1rem; color: gray;">NOM-127-1994.</h4>
+            <h4 class="mt-3" style="font-size: 1rem; color: gray;">-</h4>
 
             <div class="collapse" id="collapseAlimentosCard">
-            <p class="card-text">Salud ambiental, agua para uso y consumo humano-límites permisibles de calidad y tratamientos a que debe someterse el agua para su potabilización...</p>
+            <p class="card-text">Los análisis de alimentos son esenciales para la producción eficiente de productos seguros y de calidad.</p>
 
             <ul> 
-				<li>Coliformes Totales</li>
-				<li>Coliformes Fecales</li>
-				<li>Cloro Libre</li>
-				<li>Potencial de Hidrogeno</li>
-				<li>Solidos Disueltos Totales</li> 
+				<li>Mesofilicos Aerobios</li>
+				<li>Mohos</li>
+				<li>Levaduras</li>
+				<li>Escherichia Coli</li>
+				<li>Staphilococcus Aureus</li>
+				<li>Salmonella</li>
+				<li>Vibrio Cholerae</li>
+
 
 
 
 			</ul>  </div>
           </div>
           <div class="card-footer" style="background: inherit; border-color: inherit;">
-            <a href="#" class="btn btn-danger">Cotizar</a>
+            <a href="contacto.html" class="btn btn-danger px-5">Cotizar</a>
             
           </div>
         </div>
@@ -410,6 +435,72 @@
 
 </section>
 
+
+<section style="background: url(imagenes/fondoservicios.png); background-repeat: no-repeat; background-position: center; background-size: cover; " class="mt-5 pt-5 pb-5">
+
+
+	<div class="container text-center">
+		
+
+			<h1 style="color: white; font-weight: 700;">Servicio de capacitacion </h1>
+
+			<div class="container text-center m-auto">
+			<h2 id="uno" class="mt-5 mb-5" style="font-weight: 500; color: white; font-size: 1.3rem; text-align: justify; ">Contamos con expertos en el sector alimentario y auditores jefe para impartir cursos de formación en los que se ofrece información relevante y actualizada sobre temas clave de su negocio, ayudando a los actores involucrados, mejorar sus procesos comerciales y responder a las demandas del mercado, siempre salvaguardando la calidad y seguridad de sus productos y procesos.
+</h2>
+	</div>
+
+
+
+
+
+	</div>
+
+	<div class="container">
+		
+		<div class="row text-white px-5 text-center">
+			
+			<div class="col-12 col-md-4  "> 
+        <img src="data:image/png;base64,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">
+
+        <h3> Manejo Higienico de Alimentos</h3>
+        <p>NOM.251.SSA1.2009</p>
+
+        <p>Prácticas de higiene para el proceso de alimentos, bebidas o suplementos alimenticios</p>
+
+
+			</div>
+			<div class="col-12 col-md-4 ">
+
+				<img src="data:image/png;base64,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">
+
+        <h3> Manejo Higienico de Alimentos</h3>
+        <p>NOM.251.SSA1.2009</p>
+
+        <p>Prácticas de higiene para el proceso de alimentos, bebidas o suplementos alimenticios</p>
+
+
+
+			 </div>
+			<div class="col-12 col-md-4 ">
+
+				<img src="data:image/png;base64,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">
+
+        <h3> Manejo Higienico de Alimentos</h3>
+        <p>NOM.251.SSA1.2009</p>
+
+        <p>Prácticas de higiene para el proceso de alimentos, bebidas o suplementos alimenticios</p>
+
+
+
+
+			 </div>
+
+		</div>
+
+	</div>
+	
+
+</section>
 
 
 
