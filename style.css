@@ -95,15 +95,16 @@
    right:20px;
 }
 
-svg {
+#what svg {
    width: 80px;
    filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));
+
 }
 
-circle {
+#what circle {
    fill: #25d366;
 }
-path {
+#what path {
    fill: #fff;
 }
 
