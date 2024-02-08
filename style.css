@@ -17,6 +17,8 @@
   }
 }
 
+
+
 #banner{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(imagenes/atencioncliente.jpg);
   background-attachment: fixed;
@@ -174,9 +176,9 @@
 box-shadow: -1px 4px 18px 6px rgba(0,0,0,0.36);
 
 
-border-radius: 49px 49px 49px 49px;
--moz-border-radius: 49px 49px 49px 49px;
--webkit-border-radius: 49px 49px 49px 49px;
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
 border: 0px solid #000000;
       	}
 
@@ -192,9 +194,9 @@ border: 0px solid #000000;
 box-shadow: -1px 4px 18px 6px rgba(0,0,0,0.36);
 
 
-border-radius: 20px 20px 20px 20px;
--moz-border-radius: 20px 20px 20px 20px;
--webkit-border-radius: 20px 20px 20px 20px;
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
 border: 0px solid #000000;
 
      }
@@ -639,6 +641,12 @@ border-left: solid 1px;"
     margin-bottom: 50px;
     
   /* La imagen inferior estará detrás de la superior */
+     }
+
+
+     #fotoclip2{
+
+      top: 100px;
      }
 
 
