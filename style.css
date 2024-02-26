@@ -20,7 +20,7 @@
 
 
 #banner{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(imagenes/atencioncliente.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(imagenes/hotel.jpeg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -31,7 +31,7 @@
 }
 
 #bannerservicios{
-   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://www.minsait.com/sites/default/files/newsroom_header_images/cabecera_1280_x_604px.jpg);
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(imagenes/calidadagua.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
