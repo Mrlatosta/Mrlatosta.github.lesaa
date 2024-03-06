@@ -121,8 +121,8 @@
         background-size: 100%;
         background-color: transparent;
         background-size: cover;
-        -webkit-background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),url(imagenes/f5.png);
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),url(imagenes/f5.png);
+        -webkit-background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),url("imagenes/f5.png");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),url("imagenes/f5.png");
             background-attachment: fixed;
 
 
