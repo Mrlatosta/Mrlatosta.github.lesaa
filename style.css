@@ -113,7 +113,7 @@
 
     #imagen{
 
-
+ 
         height: 100vh;
         vertical-align: middle;
         background-repeat: no-repeat;
@@ -123,11 +123,10 @@
         background-size: cover;
         -webkit-background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),url("imagenes/f5.png");
         background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),url("imagenes/f5.png");
-            background-attachment: fixed;
-
-
+        background-attachment: fixed;
 
       	}
+        
       
       #imagenSobrenosotros{
 
@@ -640,7 +639,7 @@ border-left: solid 1px;"
     position: relative;
     max-width: 100%;
 
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     
   /* La imagen inferior estará detrás de la superior */
      }
@@ -648,7 +647,8 @@ border-left: solid 1px;"
 
      #fotoclip2{
 
-      top: 100px;
+      top: 80px;
+      width: 400px;
      }
 
 
