@@ -38,14 +38,22 @@
 	<link href="imagenes/logocuadradotrans.png" rel="icon">
   <link rel="shortcut icon" href="logocuadradotrans.png" />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
 
 
 	 <script src="scrollreveal.js"></script>
+
+
+
+   <!-- jQuery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+   <!-- FUENTE-->
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 
 
 	<link href="style.css" media="all" rel="stylesheet" >
@@ -81,6 +89,97 @@
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v19.0" nonce="yvbMyOwG"></script>
 
 	<style>
+
+    
+#contenedor_main {
+  display: grid;
+  width: 100vw;  /* 100% del ancho del viewport */
+  height: 100vh; /* 100% de la altura del viewport */
+}
+
+#contenedor_main img{
+  position: absolute;
+  top: 0; /* Alinea la parte superior de la imagen con la parte superior del contenedor */
+  left: 0;
+  width: 100%;
+  height: 100%; /* La altura original de la imagen se mantiene, pero el contenedor la recorta */
+  object-fit: cover;  /* Asegura que la imagen cubra todo el espacio, incluso si se tiene que recortar */
+  object-position: bottom; /* Alinea la parte inferior de la imagen con la parte inferior del contenedor */
+}
+
+/* GENERA UN FADE EN LAS TRANSICIONES DEL CARRUSEL PRINCIPAL*/
+
+#carritem .carousel-item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  display: block; 
+}
+
+#carrusel_principal img{
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+/* Título del carrusel principal */
+
+#carrusel_principal .carousel-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  transform: translate(-50%, -50%);
+  z-index: 1;  /* Reducido para no interferir con los controles */
+  text-align: center;
+}
+#carrusel_principal .text_decoration{
+  text-decoration: none;
+}
+
+
+#carrusel_principal .carousel-title h1 {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-weight: 600 !important;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  transition: text-shadow 0.3s ease; /* Transición suave para la sombra de texto */
+}
+
+#carrusel_principal .carousel-title h1:hover {
+  text-shadow: 16px 16px 32px rgba(0, 0, 0, 1); /* Sombra más prominente al pasar el mouse */
+}
+
+#carrusel_principal .carousel-title h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem; /* Tamaño más pequeño que el título */
+  font-weight: 400; /* Menos negrita que el título */
+  color: #ccc; /* Un color más claro para diferenciarlo del título */
+  margin-top: 10px; /* Espacio entre el título y el subtítulo */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  transition: text-shadow 0.3s ease; /* Transición suave para la sombra de texto */
+}
+
+#carrusel_principal .carousel-title h2:hover {
+  text-shadow: 8px 8px 16px rgba(0, 0, 0, 1); /* Sombra más prominente al pasar el mouse */
+}
+
+#carrusel_principal .carousel-indicators > button {
+  z-index: 2;  /* Asegúrate de que los indicadores están por encima del título */
+}
+
+/* TEXTO DEL CARRUSEL */
+
+#contenedor_texto{
+display: flex;
+flex-direction: column;
+transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+opacity: 1;
+}
 
     .lato-regular {
       font-size: 1.2rem;
@@ -344,54 +443,59 @@ span:nth-child(18) {
 </div>
 
 
-<div id="imagen" style="text-align: center; ">
+<section>
 
+  <div id="contenedor_main" class="mt-5">
+    <div id="carrusel_principal" class="carousel slide carousel-fade vh-100 vw-100" data-bs-ride="carousel" >
+        <!-- INDICADORES -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carrusel_principal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carrusel_principal" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carrusel_principal" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carrusel_principal" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+        </div>
+        
+        
+        <!-- CARRUSEL DE FOTOS-->
+        <div class="carousel-inner h-100">
+            <div id="carritem"  class="carousel-item active h-100" data-bs-interval="5000">
+                <img class="d-block w-100 h-100" src="imagenes/f5.png" alt="First slide">
+            </div>
+            
+            <div id="carritem"  class="carousel-item h-100" data-bs-interval="5000">
+                <img  class="d-block w-100 h-100" src="imagenes/mic.png" alt="Second slide">
+            </div>
+            
+            <div id="carritem"  class="carousel-item h-100" data-bs-interval="5000">
+                <img class="d-block w-100 h-100" src="imagenes/fisc.png" alt="Third slide">
+            </div>
+
+            <div id="carritem"  class="carousel-item h-100" data-bs-interval="5000">
+                <img class="d-block w-100 h-100" src="imagenes/disth.png" alt="Fourth slide">
+            </div>
+
+        </div>
+
+        <!-- TÍTULO DEL CARRUSEL -->
+        <div class="carousel-caption d-flex align-items-center justify-content-center h-100 carousel-title" id="contenedor_texto">    
+            <h1 id="carousel-link" href=""  target="_blank"> <span id="carousel-text" class="text-white"></span> </h1>
+            <h2 class="text_decoration"><span id="carousel-subtext" class="text-white"></span></h2> <!-- Elemento para el subtítulo -->
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrusel_principal" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrusel_principal" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    
+    </div>
 </div>
 
-<div id="contenedor" class="container text-center " >
-
-
-
-
-
-
-<div class="row align-items-center " >
-	
-<div class="col-12 col-md-12 " id="uno">
-
-
-
-
-	
-
-	
-	<p id="dos"  class="mt-5 me-0 text-white " style="font-size: 2.5rem;"> <strong> <span> Grupo </span> <span> LESAA </span> </strong> </p> 
-<div class="container"> <hr style="color: white; height: 3px; max-width: 500px; margin: auto; margin-top: 30px;"> 
-</div>
-
-
-
-	<h1 id="prof" class="text-white mt-3 mb-5" > <span>Profesionales</span>  <span>en</span> <span> análisis </span> <span> de</span> <span> agua </span> <span> y </span> <span> alimentos</span></h1>
-
-
-
-	
-
-</div>
-
-
-
-
-
-</div>
-
-
-
-
-
-</div>
-
-
+</section>
 <section class="p-5">
 
 <div class="container-fluid ">
@@ -779,51 +883,51 @@ Somos una empresa mexicana, comprometida en ofrecer un servicio de Control de Ca
 				
 				<div id="demoM" class="carousel slide " style="height: 300px;" data-bs-ride="carousel">
 
-  <!-- Indicators/dots -->
-  <div class="carousel-indicators">
-    <button  type="button " data-bs-target="#demoM" data-bs-slide-to="0" class="active "></button>
-    <button type="button" data-bs-target="#demoM" data-bs-slide-to="1"></button>
-     <button type="button" data-bs-target="#demoM" data-bs-slide-to="2"></button>
-     <button type="button" data-bs-target="#demoM" data-bs-slide-to="3"></button>
-     <button type="button" data-bs-target="#demoM" data-bs-slide-to="4"></button>
-        <button type="button" data-bs-target="#demoM" data-bs-slide-to="5"></button>
-     <button type="button" data-bs-target="#demoM" data-bs-slide-to="6"></button>
-     <button type="button" data-bs-target="#demoM" data-bs-slide-to="7"></button>
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button  type="button " data-bs-target="#demoM" data-bs-slide-to="0" class="active "></button>
+      <button type="button" data-bs-target="#demoM" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demoM" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demoM" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#demoM" data-bs-slide-to="4"></button>
+          <button type="button" data-bs-target="#demoM" data-bs-slide-to="5"></button>
+      <button type="button" data-bs-target="#demoM" data-bs-slide-to="6"></button>
+      <button type="button" data-bs-target="#demoM" data-bs-slide-to="7"></button>
 
-     
-  </div>
-
-  <!-- The slideshow/carousel -->
-  <div class="carousel-inner shadow" id="sob">
-    <div class="carousel-item active" style="max-height: 300px;">
-      <img style="width: 100%; " src="imagenes/M1.png" alt="Muestra uno" class="  rounded  ">
+      
     </div>
 
-     <div class="carousel-item" style="max-height: 300px;"  >
-      <img style="width: 100%;"  src="imagenes/M2.png" alt="Muestra dos" class="  rounded ">
-    </div>
-    <div class="carousel-item" style="max-height: 300px;">
-      <img style="width: 100%;"  src="imagenes/M3.png" alt="Muestra tres" class="  rounded ">
-    </div>
-     <div class="carousel-item" style="max-height: 300px;">
-      <img style="width: 100%;"  src="imagenes/M4.png" alt="Muestra cuatro" class="  rounded ">
-    </div>
-  
-     <div class="carousel-item" style="max-height: 300px;">
-      <img style="width: 100%;"  src="imagenes/M6.png" alt="Muestra seis" class="  rounded ">
-    </div>
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner shadow" id="sob">
+      <div class="carousel-item active" style="max-height: 300px;">
+        <img style="width: 100%; " src="imagenes/M1.png" alt="Muestra uno" class="  rounded  ">
+      </div>
 
-    <div class="carousel-item" style="max-height: 300px;">
-      <img style="width: 100%;"  src="imagenes/M7.jpeg" alt="Muestra seis" class="  rounded ">
-    </div>
+      <div class="carousel-item" style="max-height: 300px;"  >
+        <img style="width: 100%;"  src="imagenes/M2.png" alt="Muestra dos" class="  rounded ">
+      </div>
+      <div class="carousel-item" style="max-height: 300px;">
+        <img style="width: 100%;"  src="imagenes/M3.png" alt="Muestra tres" class="  rounded ">
+      </div>
+      <div class="carousel-item" style="max-height: 300px;">
+        <img style="width: 100%;"  src="imagenes/M4.png" alt="Muestra cuatro" class="  rounded ">
+      </div>
+    
+      <div class="carousel-item" style="max-height: 300px;">
+        <img style="width: 100%;"  src="imagenes/M6.png" alt="Muestra seis" class="  rounded ">
+      </div>
 
-    <div class="carousel-item" style="max-height: 300px;">
-      <img style="width: 100%;"  src="imagenes/M8.jpeg" alt="Muestra seis" class="  rounded ">
-    </div>
+      <div class="carousel-item" style="max-height: 300px;">
+        <img style="width: 100%;"  src="imagenes/M7.jpeg" alt="Muestra seis" class="  rounded ">
+      </div>
 
-    <div class="carousel-item" style="max-height: 300px;">
-      <img style="width: 100%;"  src="imagenes/M9.jpeg" alt="Muestra seis" class="  rounded ">
-    </div>
+      <div class="carousel-item" style="max-height: 300px;">
+        <img style="width: 100%;"  src="imagenes/M8.jpeg" alt="Muestra seis" class="  rounded ">
+      </div>
+
+      <div class="carousel-item" style="max-height: 300px;">
+        <img style="width: 100%;"  src="imagenes/M9.jpeg" alt="Muestra seis" class="  rounded ">
+      </div>
   
   
   
@@ -1173,10 +1277,13 @@ if (navigator.userAgent.includes("Safari") && !navigator.userAgent.includes("Chr
 
 </script>
 
+  <script src="JS/funcion_cambio_texto_slides.js"></script>
  <script src="index.js"></script>
 
 
 <script src="https://kit.fontawesome.com/a2057d808a.js" crossorigin="anonymous"></script>
+
+
 
 </body>
 </html>
